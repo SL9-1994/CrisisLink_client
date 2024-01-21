@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Noto_Sans_JP } from "next/font/google";
 import "./globals.css";
-import Header from "./components/Header";
+// import Header from "./components/Header";
 
 const NotoSansJPFont = Noto_Sans_JP({
   weight: "300",
@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <body className={NotoSansJPFont.className}>
-        <Header />
+        {/* <Header /> */}
         {children}
       </body>
     </html>
