@@ -5,13 +5,13 @@ export default function Home() {
     <>
       <main className="flex h-screen w-screen">
         {/* leftConponent */}
-        <div className="bg-gray-100 h-full" style={{ flex: "2.5" }}>
+        <div className="bg-gray-100 h-full hidden sm:block p-2 md:flex-3">
           <NavMenu></NavMenu>
         </div>
         {/* centerComponent */}
-        <div className="bg-gray-300 h-full" style={{ flex: "4.5" }}></div>
+        <div className="bg-gray-300 h-full flex-9 sm:flex-4"></div>
         {/* rightComponent */}
-        <div className="bg-gray-200 h-full" style={{ flex: "3" }}></div>
+        <div className="bg-gray-200 h-full hidden md:block flex-4"></div>
       </main>
     </>
   );
